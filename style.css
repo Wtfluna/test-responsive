@@ -1,0 +1,65 @@
+body {
+
+    /* background red when screen smaller than 410px */
+    @media only screen and (max-width: 410px) {
+        background: red;
+    }
+
+    /* background green when screen bigger than 410px and smaller than 768px */
+    @media only screen and (min-width: 411px) and (max-width: 767px) {
+        background: green;
+    }
+
+    /* background blue when screen bigger than or equal to 768px */
+    @media only screen and (min-width: 768px) {
+        background: blue;
+    }
+}
+
+/* If the screen size is 410px wide or less, show the element */
+@media only screen and (max-width: 410px) {
+    .small {
+        display: inline;
+        font-size: 30px;
+    }
+
+    .medium {
+        display: none;
+    }
+
+    .large {
+        display: none;
+    }
+}
+
+/* If the screen size bigger than 410px and smaller than 768px */
+@media only screen and (min-width: 411px) and (max-width: 767px) {
+    .medium {
+        display: inline;
+        font-size: 40px;
+    }
+
+    .small {
+        display: none;
+    }
+
+    .large {
+        display: none
+    }
+}
+
+/* If the screen is bigger or equal to 768px */
+@media only screen and (min-width: 768px) {
+    .large {
+        display: inline;
+        font-size: 50px;
+    }
+
+    .small {
+        display: none;
+    }
+
+    .medium {
+        display: none;
+    }
+}
